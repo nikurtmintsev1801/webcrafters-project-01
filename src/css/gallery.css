@@ -1,0 +1,123 @@
+/* img {
+    display: block;
+    width: 100%;
+    height: 100%;
+} */
+
+.section-gallery {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: var(--color-emerald-lightest);
+}
+
+@media screen and (min-width:768px) {
+    .section-gallery {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+
+.gallery-title {
+    font-family: var(--second-family);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: var(--text-main);
+    margin-bottom: 16px;
+}
+
+@media screen and (min-width:768px) {
+    .gallery-title {
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .gallery-title {
+        font-size: 48px;
+    }
+}
+
+.gallery-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--text-main);
+    margin-bottom: 32px;
+}
+
+@media screen and (max-width:767px) {
+    .gallery-list-item:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
+
+.gallery-list-img>img {
+    border-radius: 32px;
+}
+
+@media screen and (min-width:768px) {
+
+    .gallery-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .first-img {
+        width: 338px;
+        height: 338px;
+        padding-right: 2px;
+    }
+
+    .second-img {
+        width: 340px;
+        height: 700px;
+
+    }
+
+    .third-img {
+        width: 340px;
+        height: 700px;
+        margin-top: -360px;
+    }
+
+    .fourth-img {
+        width: 340px;
+        height: 340px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .gallery-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .first-img {
+        width: 421px;
+        height: 421px;
+    }
+
+    .second-img {
+        width: 421px;
+        height: 865px;
+    }
+
+    .third-img {
+        width: 421px;
+        height: 865px;
+        margin-top: 0;
+    }
+
+    .fourth-img {
+        width: 421px;
+        height: 421px;
+        margin-top: -443px;
+    }
+}
