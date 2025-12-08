@@ -1,3 +1,7 @@
+.reviews-container {
+    padding-bottom: 32px;
+}
+
 .reviews-title {
 
     font-family: var(--second-family);
@@ -7,7 +11,7 @@
     letter-spacing: 0.01em;
     text-align: center;
     color: var(--color-neutral-darkest);
-    margin: 32px 0;
+    padding: 32px 0;
 
 }
 
@@ -15,7 +19,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 0;
+    padding:0;
     margin: 0;
     list-style: none;
 }
@@ -53,7 +57,7 @@
     letter-spacing: 0.01em;
     color:var(--color-neutral-darkest);
     text-align: left;
-    
+  
 }
 
 .review-author {
@@ -63,7 +67,7 @@
         line-height: 1.6;
         color: var(--color-neutral-darkest);
         text-align: left;
-        margin-top: auto;
+     
 }
 
 @media screen and (min-width:768px) {
@@ -72,11 +76,9 @@
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 32px 24px;
-     
- }
+}
 .review-item {
         width: calc((100% - 24px) / 2);
-        
         min-height: 190px;
     }
 
@@ -93,19 +95,20 @@
 @media screen and (min-width:1440px) {
 
 .reviews-list {
-align-items: flex-start;
+    align-items: flex-start;
     justify-content: flex-start;
-        max-width: 1440px;
-        margin: 0 auto;
-        gap: 24px;
+    max-width: 1440px;
+    margin: 0 auto;
+    gap: 24px;
         
     }
 
     .review-item {
+        display: flex;
+        justify-content: space-between;
         width: calc((100% - 3 * 24px) / 4);
         min-width: 310px;
-        
-                
+            
     }
 
 }
